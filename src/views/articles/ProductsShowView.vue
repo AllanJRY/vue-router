@@ -17,7 +17,7 @@
           </table>
         </div>
         <div class="col-12 d-flex justify-content-center p-3">
-          <router-link :to="{name: 'products_edit', params: {id: product.id}}" class="link-btn">Éditer</router-link>
+          <a href="#" class="link-btn">Éditer</a>
         </div>
       </div>
     </div>

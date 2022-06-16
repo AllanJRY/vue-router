@@ -1,7 +1,7 @@
 <template>
   <header>
-    <router-link :to="{name: 'home'}" class="link" active-class="active" exact>Accueil</router-link>
-    <router-link :to="{name: 'products'}" class="link" active-class="active">Produits</router-link>
+    <a href="#" class="link">Accueil</a>
+    <a href="#" class="link">Produits</a>
   </header>
 </template>
 
@@ -26,7 +26,7 @@ header {
     text-decoration: none;
     transition-duration: 0.3s;
 
-    &.active,
+    &.router-link-active,
     &:hover {
       background-color: var(--app-secondary-color);
     }

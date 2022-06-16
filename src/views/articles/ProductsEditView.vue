@@ -39,17 +39,10 @@ export default {
       }
     });
   },
-  beforeRouteLeave(to, from, next) {
-    if (confirm("Etes vous sur de vouloir quitter l'edition")) {
-      next();
-    }
-  },
   methods: {
     handleSave() {
       this.product.name = this.formName;
       this.product.description = this.formDescription;
-
-      this.$router.push({name: 'products'});
     }
   }
 }

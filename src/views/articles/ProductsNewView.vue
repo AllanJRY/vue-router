@@ -36,8 +36,6 @@ export default {
     handleProductCreation() {
       this.product.id = Math.floor(Math.random() * 50000) + 1;
       products.push(this.product);
-
-      this.$router.push({ name: 'products' });
     }
   },
 }
